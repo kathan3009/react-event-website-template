@@ -10,7 +10,7 @@ ul {
 }
  .logo {
     margin: 0;
-    font-size: 1.45em;   
+    font-size: 1.45em;
 }
 .main-nav {
 	margin-top: 5px;
@@ -22,13 +22,18 @@ ul {
     list-style: none;
     color: #5186EC !important;
     text-decoration: none;
-	display: block;
+    display: block;
+    box-sizing: border-box;
 }
 .main-nav .nav-link{
     color:black !important;
-    font-size: 0.99em;  
+    font-size: 0.99em; 
+    transition: 0.5s; 
 }
-
+.main-nav .nav-link:hover{
+    color:  #0d54d8 !important;
+    transition: 0.25s;
+}
 .header {
     padding: 10em;
 	padding-top: .5em;
@@ -36,6 +41,10 @@ ul {
     border: 1px transparent;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
+    background-color: white;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
 
 }
 @media (min-width: 769px) {

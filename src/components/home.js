@@ -1,7 +1,11 @@
 import React from 'react';
 import '../css/main.css';
+import '../css/home.css';
 import Logo from '../images/X.png'
-import Intro from '../images/intro.svg'
+import Insta from '../images/instagram.png'
+import facebook from '../images/facebook.png'
+import Linkedin from '../images/linkedin.png'
+import Twitter from '../images/twitter.png'
 const Home = () => {
 
     return (
@@ -26,8 +30,24 @@ const Home = () => {
                               Ac placerat vestibulum lectus mauris.
                               Feugiat pretium nibh ipsum consequat nisl vel pretium lectus quam. 
                           </p>
-                    </div>
-                     
+                    </div>    
+                </div>
+                <div className="buttons">
+                <button className="media-button">
+                     <img src={Insta}/>
+                     <p><a href="https://instagram.com">Instagram</a></p>
+                    </button>
+                    <button className="media-button">
+                     <img src={facebook}/>
+                     <p><a href="https://facebook.com">Facebook</a></p>
+                    </button>  <button className="media-button">
+                     <img src={Linkedin}/>
+                     <p><a href="https://linkedin.com">Linkedin</a></p>
+                    </button>  <button className="media-button">
+                     <img src={Twitter}/>
+                     <p><a href="https://twitter.com">Twitter</a></p>
+                    </button>
+
                 </div>
            </section>
                
